@@ -1,0 +1,97 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"></div>
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title">Let's get you on board</h4>
+                      <p class="card-category">Share a few basic details with us to quickly embark on your investment journey</p>
+                  </div>
+                  <div class="card-body">
+                      <form class="userdetail">
+                          <div class="row">
+                            <div class="col-md-12">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="10-digit mobile number" type="number" maxlength="10" (change)="setMobileNumber($event)">
+                                </mat-form-field>
+                            </div>
+                          </div>
+                          <div class="row">
+                              <!-- <div class="col-md-5">
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Company (disabled)" disabled>
+                                  </mat-form-field>
+                              </div>
+                              <div class="col-md-3">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Username">
+                                  </mat-form-field>
+                              </div> -->
+                              <div class="col-md-12">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Email address" type="email" (change)="setEmail($event)">
+                                  </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Pan Card" type="text" maxlength="10" (change)="setPanNumber($event)">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                <mat-form-field>
+                                  <mat-label>Date of Birth</mat-label>
+                                  <input matInput [matDatepicker]="picker" (dateChange)="setDoB($event)">
+                                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                  <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="col-md-12" style="text-align: center;">
+                              <button mat-raised-button type="submit" class="btn btn-danger" [routerLink] = "['/aadhar-page']">Next</button>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                      </form>
+
+                      <div class="card note">
+                          <div class="col-md-12">
+                              <mat-checkbox class="textcolor">You agree to the following:</mat-checkbox>
+                              <ul>
+                                <li>You confirm that you are born in India, resident and citizen of India and not a tax resident of anyother country than India and do not have any political exposure.</li>
+                                <li>You also agree to the terms & conditions</li>
+                              </ul>
+                              <mat-checkbox>(Optional) I would like to receive all important communication through Whatsapp</mat-checkbox>
+                              <mat-checkbox>(Optional) Facial Recognition Consent</mat-checkbox>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-2"></div>
+<!--           <div class="col-md-4">
+              <div class="card card-profile">
+                  <div class="card-avatar">
+                      <a href="javascript:void(0)">
+                          <img class="img" src="./assets/img/faces/marc.jpg" />
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h6 class="card-category text-gray">CEO / Co-Founder</h6>
+                      <h4 class="card-title">Alec Thompson</h4>
+                      <p class="card-description">
+                          Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                      </p>
+                      <a href="javascript:void(0)" class="btn btn-danger btn-round">Follow</a>
+                  </div>
+              </div>
+          </div> -->
+      </div>
+  </div>
+</div>

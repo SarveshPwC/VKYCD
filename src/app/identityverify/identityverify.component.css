@@ -1,0 +1,10 @@
+.identitylabel{
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+
+.mat-button-toggle-checked {
+    background-color: grey; 
+    color: white;
+ }

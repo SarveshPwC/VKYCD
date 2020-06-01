@@ -1,0 +1,45 @@
+.aadharlabel {
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+
+.aadharimage {
+    padding-left: 20px;
+}
+
+.aadharbutton {
+    padding-top: 10px;
+    padding-left: 90px;
+}
+
+.btn {
+    border: 2px solid #545454;
+    border-radius: 5px;
+    background-color: white;
+    color: #545454;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ff9800;
+    color: white;
+}
+
+.progress-container {
+    background: #0f0a0a;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 100;
+    width: calc(100% - 30px);
+    height: 100%;
+    text-align: -webkit-center;
+}
+
+.progress {
+    top: 30%;
+    background-color: transparent;
+    box-shadow: none;
+}
+  

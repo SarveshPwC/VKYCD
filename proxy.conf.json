@@ -1,0 +1,16 @@
+{
+    "/sync/profiles": {
+      "target": "https://api.kyc.idfy.com",
+      "secure": false,
+      "logLevel": "debug",
+      "changeOrigin": true,
+      "cookieDomainRewrite": "localhost"
+    },
+  "/v1/ekyc/aadhaarDetails": {
+    "target": "http://3.7.206.4:8091",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "cookieDomainRewrite": "localhost"
+  }
+}

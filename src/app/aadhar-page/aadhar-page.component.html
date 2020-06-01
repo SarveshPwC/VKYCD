@@ -1,0 +1,91 @@
+<div class="main-content">
+    <div class="progress-container" *ngIf="showLoader" >
+        <mat-spinner class="progress" [diameter]="50" ></mat-spinner>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header card-header-warning">
+                        <h4 class="card-title">Aadhaar Verification</h4>
+                        <p class="card-category">For safe trading in financial instruments, we need to verify your
+                            details via Aadhaar</p>
+                    </div>
+                    <div class="card-body">
+                        <form class="userdetail" [formGroup]="aadharVerificationFormGroup">
+
+                            <div class="row">
+
+                                <div class="aadharimage">
+                                    <img src="../../assets/img/one.png" class="center-block">
+                                </div>
+                                <div class="aadharlabel">
+                                    <mat-label>Visit the Aadhaar (UIDAI) portal</mat-label>
+                                </div>
+
+                            </div>
+                            <div class="row aadharbutton">
+
+                                <button class="btn" (click)="visitAadharPortal()">Visit portal</button>
+
+                            </div>
+                            <div class="row"><br></div>
+                            <div class="row">
+
+                                <div class="aadharimage">
+                                    <img src="../../assets/img/two.png" class="center-block">
+                                </div>
+                                <div class="aadharlabel">
+                                    <mat-label>Follow process to create aadhar xml.</mat-label>
+                                </div>
+
+                            </div>
+                            <div class="row aadharbutton">
+
+                                <a class="warning" href="http://google.com" target="_blank">Know more</a>
+
+                            </div>
+                            <div class="row"><br></div>
+                            <div class="row">
+
+                                <div class="aadharimage">
+                                    <img src="../../assets/img/three.png" class="center-block">
+                                </div>
+                                <div class="aadharlabel">
+                                    <mat-label>{{fileName ? fileName : 'Upload the generated xml file'}}</mat-label>
+                                </div>
+
+                            </div>
+                            <div class="row aadharbutton">
+                                <input style="display: none" type="file" accept="application/x-zip-compressed"
+                                       formControlName="fileUploadFormControl"
+                                       (change)="uploadAadharXml($event)" #hiddenfileinput/>
+                                <button class="btn" (click)="hiddenfileinput.click()">Upload</button>
+
+                            </div>
+                            <div class="row aadharbutton">
+
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Enter Share code"
+                                           formControlName="shareCodeFormControl">
+                                </mat-form-field>
+
+                            </div>
+                            <div class="row aadharbutton">
+                                <div class="col-md-12" style="text-align: center;">
+                                    <button mat-raised-button type="submit" class="btn btn-warning"
+                                            (click)="oSubmitAadhar()">Next
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
